@@ -1,0 +1,9 @@
+<button 
+    class="material-icons jsj-round-btn"
+    [ngClass]="{'small': isSmallBtn, 'large' : !isSmallBtn }"
+    [type]="btnType"
+    [disabled]="isDisabled"
+    (click)="btnClicked($event)"
+    (onKeyDown)="keyPressed($event)">
+    {{icon}}
+</button>

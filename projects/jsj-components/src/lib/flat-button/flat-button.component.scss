@@ -1,0 +1,27 @@
+@import '../../../../../node_modules/material-icons/iconfont/material-icons.scss';
+
+.jsj-flat-btn {
+    background-color: rgb(116, 184, 161);
+    color: #fff;
+    padding: 10px 20px;
+    border: 0;
+    cursor: pointer;
+    font-size: 22px;
+
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+
+    &:hover {
+        background-color: rgb(99, 156, 137);
+    }
+
+    &:active {
+        padding: 9px 19px;
+    }
+
+    &:disabled {
+        background-color: rgb(177, 177, 177);
+      }
+}

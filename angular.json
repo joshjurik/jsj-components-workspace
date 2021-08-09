@@ -1,0 +1,39 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "jsj-components": {
+      "projectType": "library",
+      "root": "projects/jsj-components",
+      "sourceRoot": "projects/jsj-components/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/jsj-components/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/jsj-components/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/jsj-components/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/jsj-components/src/test.ts",
+            "tsConfig": "projects/jsj-components/tsconfig.spec.json",
+            "karmaConfig": "projects/jsj-components/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "jsj-components"
+}

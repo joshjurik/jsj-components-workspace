@@ -1,0 +1,45 @@
+@import '../../../../../node_modules/material-icons/iconfont/material-icons.scss';
+
+.jsj-round-btn {
+    background-color: rgb(116, 184, 161);
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 40px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+
+    &:hover {
+        background-color: rgb(99, 156, 137);
+    }
+
+    &:disabled {
+        background-color: rgb(177, 177, 177);
+    }
+
+    .small {
+        height: 50px;
+        width: 50px;
+
+        &:active {
+            height: 48px;
+            width: 48px;
+        }
+    }
+
+    .large {
+        height: 100px;
+        width: 100px;
+
+        &:active {
+            height: 98px;
+            width: 98px;
+        }
+    }
+}

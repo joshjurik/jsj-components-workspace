@@ -1,0 +1,8 @@
+<button 
+    class="jsj-flat-btn"
+    [type]="btnType"
+    [innerHtml]="getBtnTextHtml()"
+    [disabled]="isDisabled"
+    (click)="btnClicked($event)"
+    (onKeyDown)="keyPressed($event)">
+</button>
