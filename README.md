@@ -1,6 +1,6 @@
 # JsjComponentsWorkspace
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
+Small Angular library that can be used in other Angular apps. The concept is to be a "Material Lite" and is used to demonstrate reusability with common components.
 
 ## Development server
 
